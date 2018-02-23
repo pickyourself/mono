@@ -4,14 +4,14 @@
 #if defined(PLATFORM_UNITY) && defined(UNITY_USE_PLATFORM_STUBS)
 
 gboolean
-ves_icall_System_Net_Sockets_Socket_SupportPortReuse (MonoProtocolType proto)
+ves_icall_System_Net_Sockets_Socket_SupportPortReuse (MonoProtocolType proto, MonoError* error)
 {
 	g_assert(0 && "This function is not yet implemented for the Unity platform.");
 	return FALSE;
 }
 
 MonoBoolean
-ves_icall_System_Net_Dns_GetHostByName_internal (MonoString *host, MonoString **h_name, MonoArray **h_aliases, MonoArray **h_addr_list, gint32 hint)
+ves_icall_System_Net_Dns_GetHostByName_internal (MonoStringHandle host, MonoStringHandleOut h_name, MonoArrayHandleOut h_aliases, MonoArrayHandleOut h_addr_list, gint32 hint, MonoError *error)
 {
 	g_assert(0 && "This function is not yet implemented for the Unity platform.");
 	return FALSE;
